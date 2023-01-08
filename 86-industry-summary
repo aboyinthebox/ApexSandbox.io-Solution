@@ -16,5 +16,6 @@ public Map<String, Decimal> industrySummary(List<Account> accounts) {
                 }
         }
     }
+    return mapResult;
 
 }
