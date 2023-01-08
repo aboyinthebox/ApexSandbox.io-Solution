@@ -1,7 +1,7 @@
 public List<Account> getAccounts(List<Account> accounts) {
     // code here
 AccountWrapper[] accList=new List<AccountWrapper>();
-accList=accounts;
+accList=(AccountWrapper)accounts;
 accList?.sort();
 
 return accList;
