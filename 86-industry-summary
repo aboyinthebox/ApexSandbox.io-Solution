@@ -1,21 +1,17 @@
 public Map<String, Decimal> industrySummary(List<Account> accounts) {
     //code here
-
     Map<String, Decimal> mapResult=new Map<String, Decimal>();
-   
     For(Account acc:accounts){
         if(acc.Industry!=null){
                 if(!mapResult.containsKey(acc.Industry)){
                     mapResult.put(acc.Industry,acc.AnnualRevenue);
                 }
                 else{
-                Decimal totalRev= mapResult.get(acc.Industry);
-                mapResult.put(acc.Industry,totalRev+acc.AnnualRevenue);
+                //Decimal totalRev= mapResult.get(acc.Industry);
+               // mapResult.put(acc.Industry,totalRev+acc.AnnualRevenue);
+               mapResult.put(acc.Industry,mapResult.get(acc.Industry)+acc.AnnualRevenue);
                 }
-
-
         }
     }
     return mapResult;
-
 }
