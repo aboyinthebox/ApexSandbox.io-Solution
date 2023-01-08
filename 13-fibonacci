@@ -1,0 +1,13 @@
+public Integer fibonacci(Integer n) {
+    //code here
+   Integer fib = 1, fibPrevious = 1, temp = 1;
+
+if(n<3) return 1;
+    for(Integer i=3;i<=n;i++){
+       fib=fibPrevious+temp; //2
+        temp=fibPrevious; //1
+        fibPrevious=fib; //2
+           
+    }
+    return fib;
+}
