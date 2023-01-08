@@ -9,7 +9,7 @@ public Map<String, List<Case>> casesByType(List<Case> cases) {
                 mapResult.put(c.Type,new List<Case>{c});
             }
             else{
-             mapResult.put(c.Type, mapResult.get(c.Type).add(c));
+             mapResult.get(c.Type).add(c);
             }
 
         }
