@@ -8,9 +8,9 @@ for(Account a:accounts){
     accList.add(new AccountWrapper(a));
 }
 accList.sort();
-for(Account a:accounts){
+for(Account a:accList){
 
-   accounts[i] = accList[i].account;
+   accounts.add(a);
 }
 
 
