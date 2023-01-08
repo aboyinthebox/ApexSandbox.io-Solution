@@ -8,7 +8,8 @@ for(Account a:accounts){
     accList.add(new AccountWrapper(a));
 }
 accList.sort();
-for(Account a:accList){
+accounts.clear();
+for(AccountWrapper a:accList){
 
    accounts.add(a);
 }
