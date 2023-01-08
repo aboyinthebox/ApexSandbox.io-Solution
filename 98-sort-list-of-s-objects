@@ -11,7 +11,7 @@ accList.sort();
 accounts.clear();
 for(AccountWrapper a:accList){
 
-   accounts.add(a);
+   accounts.add(a.account);
 }
 
 
