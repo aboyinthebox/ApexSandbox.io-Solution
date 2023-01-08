@@ -7,6 +7,9 @@ for(Account a:accounts){
     accList.add(new AccountWrapper(a));
 }
 accList.sort();
+for(Integer i=0; i<accounts.size(); i++) {
+        accounts[i] = accList[i].account;
+    }
 
 return accounts;
 }
@@ -20,7 +23,7 @@ public class AccountWrapper implements Comparable{
     		ex.setMessage('Account argument cannot be null'); 
     		throw ex;
         }
-        account=acc;
+        this.account=acc;
     }
 
     public Integer compareTo(Object compareTo){
