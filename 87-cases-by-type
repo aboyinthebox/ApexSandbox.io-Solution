@@ -11,7 +11,7 @@ public Map<String, List<Case>> casesByType(List<Case> cases) {
             // else{
             //  mapResult.get(c.Type).add(c);
             // }
-            (mapResult.containsKey(c.Type))?  mapResult.get(c.Type).add(c) : mapResult.put(c.Type,new List<Case>{c});
+            (mapResult.containsKey(c.Type)) ?  mapResult.get(c.Type).add(c) : mapResult.put(c.Type,new List<Case>{c})
         }
     }
     return mapResult;
