@@ -3,6 +3,6 @@ public List<Account> getAccountsFromJSONString(String inputJSON){
 
     if(String.isBlank(inputJSON)) { return null;}
 
-    List<Account> result = 
-   (List<Account>)JSON.deserializeUntyped(inputJSON);
+    List<Account> result = (List<Account>)JSON.deserializeUntyped(inputJSON);
+return result;
 }
