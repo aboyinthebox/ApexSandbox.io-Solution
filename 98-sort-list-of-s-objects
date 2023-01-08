@@ -1,7 +1,7 @@
 public List<Account> getAccounts(List<Account> accounts) {
     // code here
 
-accounts.sort();
+accounts?.sort();
 
 return accounts;
 }
