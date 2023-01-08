@@ -9,9 +9,8 @@ public Map<String, List<Case>> casesByType(List<Case> cases) {
             mapResult.putAll(c.Type,listCases.add(c));
             }
             else{
-              List<Case> caseList= mapResult.get(c.Type);
-              caseList.add(c);
-              mapResult.putAll(c.Type,caseList);
+              
+              mapResult.get(c.Type).add(c);
             }
 
         }
