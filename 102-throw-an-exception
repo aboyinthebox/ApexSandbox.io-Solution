@@ -5,7 +5,7 @@ public List<Account> checkAccounts(List<Account> accounts)
     for(Account a:accounts){
 
         if(a.BillingCity == null){
-            throw AccountException();
+            throw new AccountException();
         }
     }
 }
