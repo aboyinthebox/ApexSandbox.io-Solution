@@ -3,7 +3,7 @@ public void validateInsert(List<Opportunity> opportunities){
     if(!opportunities.isEmpty() && opportunities.size()>0 ){
         for(Opportunity opp:opportunities){
             if(opp.StageName=='Closed Won'){
-                 if( opp.Description!=null)
+                 if( String.isBlank(opp.Description) )
                 opp.Description.addError('Description should not be empty for Closed Won opportunity.');
             }
         }
