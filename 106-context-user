@@ -1,0 +1,10 @@
+public Map<String,String> getContextUserInformation(){
+    //code here
+     Map<String,String> result= new Map<String,String>(
+         'EmailId'=> UserInfo.getUserEmail(),
+         'ProfileId' =>UserInfo.getProfileId(),
+         'Type' => UserInfo.getUserType()  ,
+         'UserName' =>  UserInfo.getUserName()
+          );
+    return  result;
+}
