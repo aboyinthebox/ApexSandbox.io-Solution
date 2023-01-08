@@ -4,11 +4,11 @@ public List<sObject> getListOfsObject(List<Account> accounts, List<Contact> cont
     List<sObject> result=new List<sObject>();
     if(accounts!=null){
 
-       result.addAll(accounts)
+       result.addAll(accounts);
     }
     if(contacts!=null){
 
-          result.addAll(contacts)
+          result.addAll(contacts);
 
     }
     return result;
