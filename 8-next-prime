@@ -1,0 +1,27 @@
+public Integer nextPrime(Integer num) {
+
+    //code here
+    if (num < 2) return 2; 
+    while(!isPrime(++num));
+    return num;
+
+}
+public Boolean isPrime(Integer num) {
+
+    Boolean isDivisible=false;
+    if(num>1){
+        for(Integer i=2 ; i<num;i++){
+            Integer result=Math.mod(num,i);
+            if(result==0){ 
+                isDivisible=true;
+                break;
+            }
+            else
+            {isDivisible=false;  }
+        }
+    
+    }
+    return  (!isDivisible);
+
+
+}
