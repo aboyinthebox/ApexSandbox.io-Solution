@@ -5,7 +5,7 @@ public Map<String, Decimal> industrySummary(List<Account> accounts) {
     Decimal totalRev;
     For(Account acc:accounts){
         if(acc.Industry!=null){
-                if(!mapResult.containsKey(a.Industry)){
+                if(!mapResult.containsKey(acc.Industry)){
 
                     mapResult.put(acc.Industry,acc.AnnualRevenue);
 
