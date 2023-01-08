@@ -16,6 +16,7 @@ public class Stack {
             Object obj=stack.remove(stack.size()-1);
             return obj;
         }
+        return null;
     }
     
     public Integer size() {
