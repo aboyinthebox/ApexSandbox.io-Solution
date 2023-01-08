@@ -7,12 +7,12 @@ public Map<String, Decimal> industrySummary(List<Account> accounts) {
         if(acc.Industry!=null){
                 if(!mapResult.containsKey(a.Industry)){
 
-                    mapResult.put(a.Industry,acc.AnnualRevenue);
+                    mapResult.put(acc.Industry,acc.AnnualRevenue);
 
                 } else{
                 totalRev= mapResult.get(acc.Industry);
                 totalRev+=acc.AnnualRevenue;
-                    mapResult.put(a.Industry,totalRev);
+                    mapResult.put(acc.Industry,totalRev);
                 }
         }
     }
