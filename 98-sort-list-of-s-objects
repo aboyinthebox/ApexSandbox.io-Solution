@@ -1,22 +1,20 @@
 public List<Account> getAccounts(List<Account> accounts) {
     // code here
-     if(accounts == null) return null;
+if(accounts == null) return null;
 AccountWrapper[] accList=new List<AccountWrapper>();
 
 for(Account a:accounts){
-
     accList.add(new AccountWrapper(a));
 }
 accList.sort();
-accounts.clear();
+
 
 for(AccountWrapper a:accList){
    accounts.add(a.account);
 }
-
-
 return accounts;
 }
+
 // write extra class here 
 public class AccountWrapper implements Comparable{
     public Account account;
