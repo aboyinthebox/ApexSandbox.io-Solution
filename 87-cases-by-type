@@ -3,7 +3,6 @@ public Map<String, List<Case>> casesByType(List<Case> cases) {
     Map<String, List<Case>> mapResult=new Map<String, List<Case>>();
     List<Case> listCases=new List<Case>();
     for(Case c:cases){
-
         if(c.Type!=null){
             if(!mapResult.containsKey(c.Type)){
                 mapResult.put(c.Type,new List<Case>{c});
@@ -11,7 +10,6 @@ public Map<String, List<Case>> casesByType(List<Case> cases) {
             else{
              mapResult.get(c.Type).add(c);
             }
-
         }
     }
     return mapResult;
