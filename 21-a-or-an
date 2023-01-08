@@ -1,0 +1,11 @@
+public String aOrAn(String word) {
+    //code here
+
+    return (word.startsWith('a')?'an '+word:
+    (word.startsWith('e')?'an '+word: 
+    (word.startsWith('i')?'an '+word: 
+    (word.startsWith('o')?'an '+word:
+    (word.startsWith('u')?'an '+word:'a '+word 
+    ))))
+    );
+}
