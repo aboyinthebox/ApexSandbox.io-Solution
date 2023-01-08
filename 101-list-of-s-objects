@@ -12,7 +12,7 @@ public List<sObject> getListOfsObject(List<Account> accounts, List<Contact> cont
     }
     if(contacts!=null){
 
-        for(Contact a:accounts){
+        for(Contact a:contacts){
 
             result.add(a);
         }
