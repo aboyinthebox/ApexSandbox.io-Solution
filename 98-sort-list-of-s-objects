@@ -1,9 +1,12 @@
 public List<Account> getAccounts(List<Account> accounts) {
     // code here
 AccountWrapper[] accList=new List<AccountWrapper>();
-accList=(AccountWrapper)accounts;
-accList?.sort();
 
+for(Account a:accounts){
+
+    accList.add(new AccountWrapper(a));
+}
+accList.sort();
 return accList;
 }
 // write extra class here 
