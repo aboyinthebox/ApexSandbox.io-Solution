@@ -1,9 +1,10 @@
 public List<Account> getAccounts(List<Account> accounts) {
     // code here
+AccountWrapper[] accList=new List<AccountWrapper>();
+accList=accounts;
+accList?.sort();
 
-accounts?.sort();
-
-return accounts;
+return accList;
 }
 // write extra class here 
 public class AccountWrapper implements Comparable{
