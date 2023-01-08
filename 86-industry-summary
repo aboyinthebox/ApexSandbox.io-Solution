@@ -9,7 +9,7 @@ public Map<String, Decimal> industrySummary(List<Account> accounts) {
                     mapResult.put(acc.Industry,acc.AnnualRevenue);
                 }
                 else{
-                Decimal totalRev;= mapResult.get(acc.Industry);
+                Decimal totalRev= mapResult.get(acc.Industry);
                 mapResult.put(acc.Industry,totalRev+acc.AnnualRevenue);
                 }
 
