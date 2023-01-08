@@ -1,0 +1,6 @@
+public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean passedProject) {
+    //code here
+    return(passedExam?
+    (passedAssignments?true:(passedProject?true:false)):
+    (passedAssignments?(passedProject?true:false):false));
+}
