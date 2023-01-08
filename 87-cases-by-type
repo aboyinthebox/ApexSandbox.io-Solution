@@ -6,11 +6,11 @@ public Map<String, List<Case>> casesByType(List<Case> cases) {
 
         if(c.Type!=null){
             if(!mapResult.containsKey(c.Type)){
-            mapResult.put(c.Type,new List{c});
+                mapResult.put(c.Type,new List{c});
             }
             else{
               
-              mapResult.get(c.Type).add(c);
+             mapResult.put(c.Type, mapResult.get(c.Type).add(c));
             }
 
         }
