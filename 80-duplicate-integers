@@ -1,0 +1,20 @@
+public Boolean containsDuplicates(List<Integer> nums) {
+    //code here
+    Boolean isUnique=true;
+    Set<Integer> result=new Set<Integer>();
+    if(nums.size()!=0){
+        for(Integer n:nums){
+            if(!result.contains(n)){
+                result.add(n);
+            }
+            else
+            {
+                isUnique=false;
+            }
+        }
+    }
+    else{
+        isUnique=true;
+    }
+    return !isUnique;
+}
