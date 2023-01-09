@@ -1,0 +1,31 @@
+public boolean isSorted(List<Integer> numbers) {
+    //code here
+    Boolean isSortedList;
+    if(numbers.size()<=1){return true;}
+    
+    for(Integer i=0;i<numbers.size()-1;i++){
+        if(numbers[i]<=numbers[i+1]){
+            isSortedList=true;
+        }
+        else
+        {
+            isSortedList=false;
+            break;
+        }
+    }
+    if(!isSortedList){
+        for(Integer i=0;i<numbers.size()-1;i++){
+                if(numbers[i]>=numbers[i+1]){
+                    isSortedList=true;
+                }
+                else
+                {
+                    isSortedList=false;
+                    break;
+                }
+            }
+
+    }
+   
+    return isSortedList;
+}
