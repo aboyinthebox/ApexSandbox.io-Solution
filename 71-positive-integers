@@ -1,0 +1,11 @@
+public List<Integer> positiveIntegers(List<Integer> numbers) {
+    //code here
+    
+ List<Integer> posNums=new List<Integer>();
+   for(Integer n:numbers){
+       if(n>0){
+           posNums.add(n);
+       }
+   }
+ return posNums;
+}
