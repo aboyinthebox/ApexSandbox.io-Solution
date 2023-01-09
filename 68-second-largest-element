@@ -1,0 +1,23 @@
+public Integer secondLargest(List<Integer> numbers) {
+
+    Integer largest=-2147483647 - 1,secondLargest=-2147483647 - 1;
+
+    for(Integer i=0;i<numbers.size();i++){
+        //checking if the new number is largest
+        if(numbers[i]>largest){ 
+            secondLargest=largest; //assigning previous largest to second largest 
+            largest=numbers[i]; 
+        }
+        else if(numbers[i]==largest)
+        {
+            continue;//if same largest number comes again does nothing
+        }
+        else
+        { //checking if number is larger than second largest
+            if(numbers[i]>secondLargest){
+                secondLargest=numbers[i];
+            }
+        }
+    }
+    return secondLargest;
+}
