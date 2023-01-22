@@ -22,8 +22,8 @@ public string countAndSayHelper(String currentSequence){
                 count = 1;
             }
         }
-        newSequence.append(count);
-        newSequence.append(currentChar);
-        return newSequence.toString();
+        newSequence+=count;
+        newSequence+=currentChar;
+        return newSequence;
 
 }
