@@ -6,7 +6,7 @@ Matcher matcher = nonAlphanumeric.matcher(str);
 String result=matcher.replaceAll('');
 Integer len=result.length();
 
-if(String.isBlank(result)){
+if(String.isBlank(result) or len==1){
 return true;
 }
 for(Integer i=0;i< result.length();i++){ //i=0 len=2 aA
