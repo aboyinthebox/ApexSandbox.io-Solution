@@ -1,0 +1,32 @@
+public List<String> commonChars(List<String> strs){
+      List<String> result = new List<String>();
+    Map<String, Integer> charCount = new Map<String, Integer>();
+    
+    for (String str : strs) {
+        for (Integer i = 0; i < str.length(); i++) {
+            String currentChar = str.substring(i, i+1);
+            if (charCount.containsKey(currentChar)) {
+                charCount.put(currentChar, charCount.get(currentChar) + 1);
+            } else {
+                charCount.put(currentChar, 1);
+            }
+        }
+    }
+    
+    Integer minCount = Integer.MAX_VALUE;
+    for (String key : charCount.keySet()) {
+        if (charCount.get(key) < minCount) {
+            minCount = charCount.get(key);
+        }
+    }
+    
+    for (String key : charCount.keySet()) {
+        if (charCount.get(key) == minCount) {
+            result.add(key);
+        }
+    }
+    
+    return result;
+}
+
+}
