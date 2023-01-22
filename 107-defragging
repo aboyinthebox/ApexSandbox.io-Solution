@@ -5,24 +5,19 @@ public void defragging(Integer[] memory)
 Integer left = 0;
 Integer right = memory.size() - 1;
 
-while(left<right){
-
-    if(memory[left]==-1){
-        if(memory[right]!=-1){
-       memory[left] = memory[right];
+while (left < right) {
+    if (memory[left] == -1) {
+        if (memory[right] != -1) {
+            memory[left] = memory[right];
             memory[right] = -1;
-        left++;
-        right--;
+            left++;
+            right--;
         } else {
             right--;
         }
-
     } else {
         left++;
     }
-    
-
-
 }
 
 }
