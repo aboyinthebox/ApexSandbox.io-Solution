@@ -1,7 +1,7 @@
 public string countAndSay(integer N) {
 
    String currentSequence = '1';
-        for (Integer i = 1; i < n; i++) {
+        for (Integer i = 1; i < N; i++) {
             currentSequence = countAndSayHelper(currentSequence);
         }
         return currentSequence;
