@@ -12,7 +12,7 @@ public string countAndSayHelper(String currentSequence){
  String newSequence = '';
         Integer count = 1;
         Integer currentChar = currentSequence.charAt(0);
-        String 
+        
         for (Integer i = 1; i < currentSequence.length(); i++) {
             if (currentSequence.charAt(i) == currentChar) {
                 count++;
@@ -20,7 +20,7 @@ public string countAndSayHelper(String currentSequence){
                 newSequence+=count;
                 List<Integer> mychar=new List<Integer>();
                 mychar.add(currentChar);
-                newSequence+=String.fromCharArray(mychar);;
+                newSequence+=String.fromCharArray(mychar);
                 currentChar = currentSequence.charAt(i);
                 count = 1;
             }
