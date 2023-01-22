@@ -18,7 +18,7 @@ public string countAndSayHelper(String currentSequence){
                 count++;
             } else {
                 newSequence+=count;
-                List<integer> mychar=new List<Integer>();
+                List<Integer> mychar=new List<Integer>();
                 mychar.add(currentChar);
                 newSequence+=String.fromCharArray(mychar);;
                 currentChar = currentSequence.charAt(i);
