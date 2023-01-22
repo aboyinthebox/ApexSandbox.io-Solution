@@ -8,6 +8,6 @@ public void plusOne(List<Integer> numbers) {
         }
         else numbers[i] = 0;
     }
-    numbers.add(0, 1);
+   
     
 }
