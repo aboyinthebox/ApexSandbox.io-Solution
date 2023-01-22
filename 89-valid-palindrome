@@ -8,7 +8,7 @@ for(Integer i=0;i< len;i++){ //i=0 len=2
         if (str.charAt(i)!=str.charAt(len-1)){
              return false;
         }
-    len-=1;
+    len=len-1;
     }
     else{
         return true;
