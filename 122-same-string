@@ -10,7 +10,7 @@ public static String returnFinalString(String str){
         String backSpace='#';
         Integer asciicode=backSpace.charAt(0);
        
-        List<Integer> charArray= str1.getChars(); //x#yz
+        List<Integer> charArray= str.getChars(); //x#yz
         System.debug('char array:'+charArray);
         List<Integer> resultCharArray=new List<Integer>();
         for(Integer i=charArray.size()-1;i>=0;i--){
