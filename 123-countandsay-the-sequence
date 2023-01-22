@@ -9,7 +9,7 @@ public string countAndSay(integer N) {
 }
 public string countAndSayHelper(String currentSequence){
  
- String newSequence = new String();
+ String newSequence = '';
         Integer count = 1;
         char currentChar = currentSequence.charAt(0);
         for (Integer i = 1; i < currentSequence.length(); i++) {
