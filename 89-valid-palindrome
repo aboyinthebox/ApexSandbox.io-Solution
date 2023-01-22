@@ -5,6 +5,10 @@ Pattern nonAlphanumeric = Pattern.compile('[^a-zA-Z0-9]');
 Matcher matcher = nonAlphanumeric.matcher(str);
 String result=matcher.replaceAll('');
 Integer len=result.length();
+
+if(String.isBlank(result)){
+return true;
+}
 for(Integer i=0;i< result.length();i++){ //i=0 len=2 aA
     if(i!=len){
         len=len-1;
