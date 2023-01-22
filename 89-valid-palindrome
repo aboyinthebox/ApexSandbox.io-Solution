@@ -22,5 +22,5 @@ for(Integer i=0;i< result.length();i++){ //i=0 len=2 aA
     }
 
 }
-return false;
+return true;
 }
