@@ -23,7 +23,7 @@ public static String returnFinalString(String str){
                 System.debug('double backspace at:'+i);
                 }
                 else{
-                    i--;
+                   if(i!=0)   i--;
                      System.debug('single backspace at:'+i);
                 }
             }
