@@ -3,12 +3,12 @@ public Boolean isPalindrome(String str){
 Pattern nonAlphanumeric = Pattern.compile('[^a-zA-Z0-9]');
 Matcher matcher = nonAlphanumeric.matcher(str);
 Integer len=str.length();
-for(Integer i=0;i< len;i++){
+for(Integer i=0;i< len;i++){ //i=0 len=2
     if(i!=len){
-         if (str.charAt(i)!=str.charAt(len-1)){
+         if (str.charAt(i)!=str.charAt(len--)){
              return false;
         }
-    len--;
+ 
     }
     else{
         return true;
