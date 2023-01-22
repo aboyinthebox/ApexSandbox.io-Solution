@@ -1,26 +1,14 @@
 public Integer maxProfit(List<Integer> prices){
     //code here
-        Integer maxPrice=10000;
-        Integer minPrice=prices[0];
-        Integer dayminIndex=0;
-        Integer daymaxIndex=0;
-        for(Integer i=0;i<prices.size();i++){
-            if(dayminIndex>daymaxIndex){maxPrice=minPrice;}
-            if(maxPrice<=prices[i]){
-                maxPrice=prices[i];//10
-                daymaxIndex=i;//0
-            } else if(minPrice>=prices[i]){
-                minPrice=prices[i]; //2
-                dayminIndex=i;//1
+        int minPrice = Integer.MAX_VALUE;
+        int maxProfit = 0;
+        for (Integer price : prices) {
+            if (price < minPrice) {
+                minPrice = price;
+            } else {
+                maxProfit = Math.max(maxProfit, price - minPrice);
             }
-      
-           
         }
-        if(dayminIndex<daymaxIndex){
-            return maxPrice-minPrice;
-        }
-        else{
-            return 0;
-        }
+        return maxProfit;
         
 }
