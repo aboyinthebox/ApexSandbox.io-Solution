@@ -10,17 +10,16 @@ if(String.isBlank(result) || len==1){
 return true;
 }
 for(Integer i=0;i< result.length();i++){ //i=0 len=2 aA
+    len=len-1;
     if(i!=len){
-        len=len-1;
+       
         if (result.charAt(i)!=result.charAt(len)){
              return false;
         }
-   
     }
     else{
         return true;
     }
-
 }
 return true;
 }
