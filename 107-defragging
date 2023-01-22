@@ -7,13 +7,19 @@ Integer right=memory[len-1];
 
 while(left<right){
 
-    if(memory[left]==-1 && memory[right]!=-1){
- 
+    if(memory[left]==-1){
+        if(memory[right]!=-1){
         Integer temp=memory[left];
         memory[left]=memory[right];
         memory[right]=temp;
         left++;
         right--;
+        } else {
+            right--;
+        }
+
+    } else {
+        left++;
     }
     
 
