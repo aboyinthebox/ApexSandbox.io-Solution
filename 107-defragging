@@ -9,8 +9,7 @@ Integer right = memory.size() ;
                
                if(memory[i]==-1){
                     memory[i]=memory[i+1];
-                    memory[right]=-1;
-                    right--;
+                  
                }
                
                 
