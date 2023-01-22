@@ -9,8 +9,8 @@ Integer left = 0;
     for (Integer i = 0; i < memory.size(); i++) {
         if (memory[i] != -1) {
             Integer temp = memory[nextPos];
-            memory.add(nextPos, memory[i+1]);
-            memory.add(i, temp);
+            memory[nextPos]= memory[i+1];
+            memory[i]=temp;
             nextPos++;
         }
     }
