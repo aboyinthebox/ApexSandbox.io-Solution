@@ -3,7 +3,7 @@ public Boolean isPalindrome(String str){
 Pattern nonAlphanumeric = Pattern.compile('[^a-zA-Z0-9]');
 Matcher matcher = nonAlphanumeric.matcher(str);
 Integer len=str.length();
-for(int i=0;i< len;i++){
+for(Integer i=0;i< len;i++){
     if(i!=len){
          if (str.charAt(i)!=str.charAt(len-1)){
              return false;
