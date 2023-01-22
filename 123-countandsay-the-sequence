@@ -11,7 +11,7 @@ public string countAndSayHelper(String currentSequence){
  
  String newSequence = '';
         Integer count = 1;
-        Character currentChar = currentSequence.charAt(0);
+        Integer currentChar = currentSequence.charAt(0);
         for (Integer i = 1; i < currentSequence.length(); i++) {
             if (currentSequence.charAt(i) == currentChar) {
                 count++;
