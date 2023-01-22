@@ -10,7 +10,7 @@ public Boolean isSubSequence(String s1, String s2){
                    if(j>=pointer) //1
                     {
                         pointer=j;
-                        break;
+           
                     }
                  
                    isMatchFound=true;
