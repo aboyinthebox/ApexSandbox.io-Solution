@@ -2,18 +2,18 @@ public void defragging(Integer[] memory)
 {
     // code here
 
- int i = 0;
-    int j = 0;
-    int n = arr.size();
+ Integer i = 0;
+    Integer j = 0;
+    Integer n = memory.size();
     while (j < n) {
-        if (arr.get(j) != -1) {
-            arr.set(i, arr.get(j));
+        if (memory.get(j) != -1) {
+            memory.set(i, memory.get(j));
             i++;
         }
         j++;
     }
     while (i < n) {
-        arr.set(i, -1);
+        memory.set(i, -1);
         i++;
     }
 }
