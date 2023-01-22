@@ -1,7 +1,7 @@
 public string countAndSay(integer N) {
 
    String currentSequence = '1';
-        for (int i = 1; i < n; i++) {
+        for (Integer i = 1; i < n; i++) {
             currentSequence = countAndSayHelper(currentSequence);
         }
         return currentSequence;
@@ -10,9 +10,9 @@ public string countAndSay(integer N) {
 public string process(String s){
  
  StringBuilder newSequence = new StringBuilder();
-        int count = 1;
+        Integer count = 1;
         char currentChar = currentSequence.charAt(0);
-        for (int i = 1; i < currentSequence.length(); i++) {
+        for (Integer i = 1; i < currentSequence.length(); i++) {
             if (currentSequence.charAt(i) == currentChar) {
                 count++;
             } else {
