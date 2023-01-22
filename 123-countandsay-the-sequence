@@ -1,34 +1,29 @@
 public string countAndSay(integer N) {
 
-    String res = '';
-    for (Integer i = 0; i < N; i++){
-        res = process(res);
-    }
-    return res;
-'13112221'
+   String currentSequence = "1";
+        for (int i = 1; i < n; i++) {
+            currentSequence = countAndSayHelper(currentSequence);
+        }
+        return currentSequence;
 
 }
 public string process(String s){
  
- if (String.isEmpty(s))
-        return '1';
-
-    String res = '';
-
-    Integer i = 0;
-    Integer n = s.length();
-    List<String> sp = s.split('');
-
-      for (Integer i = 0; i < n; i++){
-        Integer count=1;
-        if(sp[i]==sp[i++]){
-            count++;
+ StringBuilder newSequence = new StringBuilder();
+        int count = 1;
+        char currentChar = currentSequence.charAt(0);
+        for (int i = 1; i < currentSequence.length(); i++) {
+            if (currentSequence.charAt(i) == currentChar) {
+                count++;
+            } else {
+                newSequence.append(count);
+                newSequence.append(currentChar);
+                currentChar = currentSequence.charAt(i);
+                count = 1;
+            }
         }
-        else{
-            res=count+sp[i];
-        }
-
-
-      }
+        newSequence.append(count);
+        newSequence.append(currentChar);
+        return newSequence.toString();
 
 }
