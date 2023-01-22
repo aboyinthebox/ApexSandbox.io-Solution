@@ -16,15 +16,17 @@ public static String returnFinalString(String str){
         for(Integer i=charArray.size()-1;i>=0;i--){
              System.debug('char at:'+i+'is:'+charArray[i]);
             if(hashCode==charArray[i] ){
+                if(i!=0){
                 if(hashCode==charArray[i-1])
                 {
-                if(i!=0)  i-=3;
+                  i-=3;
                 
                 System.debug('double backspace at:'+i);
                 }
                 else{
                    if(i!=0)   i--;
                      System.debug('single backspace at:'+i);
+                }
                 }
             }
             else{
