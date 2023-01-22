@@ -4,6 +4,7 @@ public void plusOne(List<Integer> numbers) {
     for(Integer num:numbers){
         numberStr+=num;
     }
+    numbers.clear();
     Integer total=Integer.valueOf(numberStr) + 1;
     List<String> resultList= String.valueOf(total).split('');
  
