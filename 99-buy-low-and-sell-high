@@ -13,7 +13,7 @@ public Integer maxProfit(List<Integer> prices){
                 minPrice=prices[i]; //2
                 dayminIndex=i;//1
             }
-            if(dayminIndex>daymaxIndex){maxPrice=0;}
+           
         }
         if(dayminIndex<daymaxIndex){
             return maxPrice-minPrice;
