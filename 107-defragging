@@ -15,7 +15,7 @@ while (left < right) {//0-
             left++;
             right--;
         } else {
-            right--;
+            left++;
         }
     } else {
         left++;
