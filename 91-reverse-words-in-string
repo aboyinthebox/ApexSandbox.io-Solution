@@ -1,15 +1,22 @@
 public static String reverseWords(String str){
- // solution here 
-String[] input=str.split(' ');
-Integer[] strChars=new List<Integer>();
-String[] result=new List<String>();
-for(String s:input){
-   strChars=s.getChars(); //DSA
-   Integer[] chars=new List<Integer>(); 
-   for(Integer i=strChars.length()-1;i>=0;i--){
-        chars.add(strChars[i]);
-   }
-   result.add(String.fromCharArray(chars));
-}
+  // solution here 
+        String[] input=str.split(' ');
+        Integer[] strChars=new List<Integer>();
+        String[] result=new List<String>();
+        
+        for(String s:input){
+            System.debug('String'+s);
+           strChars=s.getChars(); //DSA
+           Integer[] chars=new List<Integer>(); 
+           for(Integer i=strChars.size()-1;i>=0;i--){
+                chars.add(strChars[i]);
+           }
+           result.add(String.fromCharArray(chars));
+            System.debug('reversed'+result);
+        }
+        
+        String finalString=String.join(result,' ');
+        return finalString;
+        
 
 }
