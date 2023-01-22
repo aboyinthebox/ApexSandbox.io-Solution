@@ -12,12 +12,13 @@ public string countAndSayHelper(String currentSequence){
  String newSequence = '';
         Integer count = 1;
         Integer currentChar = currentSequence.charAt(0);
+        String 
         for (Integer i = 1; i < currentSequence.length(); i++) {
             if (currentSequence.charAt(i) == currentChar) {
                 count++;
             } else {
                 newSequence+=count;
-                newSequence+=currentChar;
+                newSequence+=String.fromCharArray( new List<integer> { currentChar } );;
                 currentChar = currentSequence.charAt(i);
                 count = 1;
             }
