@@ -1,14 +1,13 @@
 public void plusOne(List<Integer> numbers) {
     // code here
-      String numberStr='';
-    for(Integer num:numbers){
-        numberStr+=num;
-    }
-    numbers.clear();
-    Integer total=Integer.valueOf(numberStr) + 1;
-    List<String> resultList= String.valueOf(total).split('');
- 
-        for(String res:resultList){
-            numbers.add(Integer.valueOf(res));
+
+   for (Integer i=numbers.size() - 1; i >= 0; i--) {
+        numbers[i]++;
+        if (numbers[i] <= 9) { 
+            return;
         }
+        else numbers[i] = 0;
+    }
+    numbers.add(0, 1);
+    
 }
