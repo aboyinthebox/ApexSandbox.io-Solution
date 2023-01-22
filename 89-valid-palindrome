@@ -8,7 +8,7 @@ Integer len=str.length();
 for(Integer i=0;i< str.length();i++){ //i=0 len=2 aA
     if(i!=len){
         len=len-1;
-        if (result.charAt(i)!=result.charAt(len-1)){
+        if (result.charAt(i)!=result.charAt(len)){
              return false;
         }
    
