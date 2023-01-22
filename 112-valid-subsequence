@@ -3,7 +3,7 @@ public Boolean isSubSequence(String s1, String s2){
 Integer pointer=0;
     for(Integer i=0;i<s1.length();i++){
 
-          for(Integer j=0;i<s2.length();i++){
+          for(Integer j=0;j<s2.length();j++){
               
             
               if(s1.charAt(i)==s2.charAt(j)){
