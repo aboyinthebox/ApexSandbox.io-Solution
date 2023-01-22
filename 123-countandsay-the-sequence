@@ -7,7 +7,7 @@ public string countAndSay(integer N) {
         return currentSequence;
 
 }
-public string countAndSayHelper(String s){
+public string countAndSayHelper(String currentSequence){
  
  StringBuilder newSequence = new StringBuilder();
         Integer count = 1;
