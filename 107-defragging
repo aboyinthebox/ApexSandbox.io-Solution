@@ -12,10 +12,10 @@ while(left<right){
         Integer temp=memory[left];
         memory[left]=memory[right];
         memory[right]=temp;
-
+        left++;
+        right--;
     }
-    left++;
-    right--;
+    
 
 
 }
