@@ -9,9 +9,8 @@ while(left<right){
 
     if(memory[left]==-1){
         if(memory[right]!=-1){
-        Integer temp=memory[left];
-        memory[left]=memory[right];
-        memory[right]=temp;
+       memory[left] = memory[right];
+            memory[right] = -1;
         left++;
         right--;
         } else {
