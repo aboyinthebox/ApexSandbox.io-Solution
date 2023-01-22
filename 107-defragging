@@ -1,0 +1,23 @@
+public void defragging(Integer[] memory)
+{
+    // code here
+    Integer len=memory.size();
+Integer left=memory[0];
+Integer right=memory[len-1];
+
+while(left<right){
+
+    if(memory[left]==-1 && memory!=-1){
+ 
+        Integer temp=memory[left];
+        memory[left]=memory[right];
+        memory[right]=temp;
+
+    }
+    left++;
+    right--;
+
+
+}
+
+}
