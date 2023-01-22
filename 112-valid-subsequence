@@ -1,21 +1,30 @@
 public Boolean isSubSequence(String s1, String s2){
-    //code here
-    Integer pointer=0;
-    for(Integer i=0;i<s1.length();i++){
-          Boolean isMatchFound=false;
-          for(Integer j=0;j<s2.length();j++){
-              if(s1.charAt(i)==s2.charAt(j)){
-                  //tworraord
-                  isMatchFound=true;
-                   if(j>=pointer) //1
-                    {
-                        pointer=j;
-           
-                    }
+      //code here
+        Integer pointer=0;
+        
+        for(Integer i=0;i<s1.length();i++){
+        //wood
+        	  Boolean isMatchFound=false;
+              for(Integer j=0;j<s2.length();j++){
+                  System.debug('Checking for:'+s1.charAt(i)+'and '+s2.charAt(j));
+                  if(s1.charAt(i)==s2.charAt(j)){
+                      //tworraord
+                    
+                       if(j>=pointer) //1
+                        {
+                            pointer=j;
+                            System.debug('Match pointer:'+pointer+'and j:'+j);
+                         	
+                        }
+                      isMatchFound=true;
+                      
+                  }
+                  else
+                  { System.debug('non match pointer:'+pointer+'and j:'+j); }
+                    
+                 
               }
-
-          }
-           if(!isMatchFound) return false;
-    }
-    return false;
+            if(!isMatchFound) return false;
+        }
+        return true;
 }
