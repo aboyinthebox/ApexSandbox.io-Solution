@@ -1,6 +1,6 @@
 public string countAndSay(integer N) {
 
-   String currentSequence = "1";
+   String currentSequence = '1';
         for (int i = 1; i < n; i++) {
             currentSequence = countAndSayHelper(currentSequence);
         }
