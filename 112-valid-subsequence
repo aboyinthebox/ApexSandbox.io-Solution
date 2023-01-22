@@ -12,9 +12,8 @@ public Boolean isSubSequence(String s1, String s2){
                         pointer=j;
                         break;
                     }
-                  else{
-                        return false;
-                  }
+                 
+                   isMatchFound=true;
               }
 
           }
