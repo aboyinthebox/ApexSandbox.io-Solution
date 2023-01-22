@@ -4,7 +4,7 @@ public static Boolean sameString(String str1, String str2){
     str2 = process(str2);
     return str1.equals(str2);
 }
-public static String returnFinalString(String str){
+public static String process(String s){
     List<String> sp = s.split('');
     String res = '';
     Integer i = 0, count = 0;
