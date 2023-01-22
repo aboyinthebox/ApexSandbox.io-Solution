@@ -1,10 +1,8 @@
 public static Boolean sameString(String str1, String str2){
     // solution
-    String result1=returnFinalString(str1);
-    String result2=returnFinalString(str2);
-
-    return (result1.equals(result2));
-
+    str1 = process(str1);
+    str2 = process(str2);
+    return str1.equals(str2);
 }
 public static String returnFinalString(String str){
     List<String> sp = s.split('');
