@@ -2,6 +2,7 @@ public boolean isAnagram(String s1, String s2) {
     //Code here
     Integer[] char1=s1.getChars();
        Integer[] char2=s1.getChars();
-
-       return(char1.sort().equals(char2.sort()));
+char1.sort();
+char2.sort();
+       return(char1.equals(char2));
 }
