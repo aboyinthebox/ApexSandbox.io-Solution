@@ -5,7 +5,7 @@ public void defragging(Integer[] memory)
 Integer left = 0;
 
 
-  Integer nextPos = memory.size()-1 ;;
+  Integer nextPos = memory.size()-1 ;
     for (Integer i = 0; i < nextPos-1; i++) {
         if (memory[i] == -1) {
             Integer temp = memory[nextPos];
