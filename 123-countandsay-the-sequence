@@ -9,15 +9,15 @@ public string countAndSay(integer N) {
 }
 public string countAndSayHelper(String currentSequence){
  
- StringBuilder newSequence = new StringBuilder();
+ String newSequence = new String();
         Integer count = 1;
         char currentChar = currentSequence.charAt(0);
         for (Integer i = 1; i < currentSequence.length(); i++) {
             if (currentSequence.charAt(i) == currentChar) {
                 count++;
             } else {
-                newSequence.append(count);
-                newSequence.append(currentChar);
+                newSequence+=count;
+                newSequence+=currentChar;
                 currentChar = currentSequence.charAt(i);
                 count = 1;
             }
