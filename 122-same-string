@@ -7,7 +7,7 @@ public static Boolean sameString(String str1, String str2){
 
 }
 public static String returnFinalString(String str){
-         List<String> sp = s.split('');
+    List<String> sp = s.split('');
     String res = '';
     Integer i = 0, count = 0;
     i = sp.size() - 1;
@@ -20,6 +20,5 @@ public static String returnFinalString(String str){
         i--;
     }
     return res;
-
 }
 
