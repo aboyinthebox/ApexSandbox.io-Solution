@@ -2,7 +2,6 @@ public Boolean isSubSequence(String s1, String s2){
     //code here
     Integer pointer=0;
     for(Integer i=0;i<s1.length();i++){
-    //wood
           Boolean isMatchFound=false;
           for(Integer j=0;j<s2.length();j++){
               if(s1.charAt(i)==s2.charAt(j)){
@@ -13,10 +12,6 @@ public Boolean isSubSequence(String s1, String s2){
                         pointer=j;
            
                     }
-                    else
-                    {return false;}
-                 
-                   
               }
 
           }
