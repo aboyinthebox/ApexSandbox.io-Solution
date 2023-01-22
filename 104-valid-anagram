@@ -1,8 +1,12 @@
 public boolean isAnagram(String s1, String s2) {
     //Code here
-    Integer[] char1=s1.getChars();
-    Integer[] char2=s2.getChars();
-char1.sort();
-char2.sort();
-return(char1.equals(char2));
+    if(String.isNotBlank(s1)&& String.isNotBlank(s2)){
+        Integer[] char1=s1.getChars();
+        Integer[] char2=s2.getChars();
+        char1.sort();
+        char2.sort();
+        return(char1.equals(char2));
+    }
+    return false;
+    
 }
