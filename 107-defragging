@@ -1,9 +1,9 @@
 public void defragging(Integer[] memory)
 {
     // code here
-    Integer len=memory.size();
+ 
 Integer left=memory[0];
-Integer right=memory[len-1];
+Integer right=memory.size()-1;
 
 while(left<right){
 
