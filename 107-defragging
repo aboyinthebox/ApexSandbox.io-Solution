@@ -3,13 +3,14 @@ public void defragging(Integer[] memory)
     // code here
 
 Integer left = 0;
-Integer right = memory.size() - 1;
+Integer right = memory.size() ;
 
  for(Integer i=0;i<memory.size()-1;i++){              
                
                if(memory[i]==-1){
                     memory[i]=memory[i+1];
                     memory[right]=-1;
+                    right--;
                }
                
                 
