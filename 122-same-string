@@ -18,7 +18,7 @@ public static String returnFinalString(String str){
             if(hashCode==charArray[i] ){
                 if(hashCode==charArray[i-1])
                 {
-                i-=3;
+                if(i!=0)  i-=3;
                 
                 System.debug('double backspace at:'+i);
                 }
