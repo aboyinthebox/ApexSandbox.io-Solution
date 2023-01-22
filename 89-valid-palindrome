@@ -2,7 +2,7 @@ public Boolean isPalindrome(String str){
 //code here
 String strLower=str.toLowerCase();
 Pattern nonAlphanumeric = Pattern.compile('[^a-zA-Z0-9]');
-Matcher matcher = nonAlphanumeric.matcher(str);
+Matcher matcher = nonAlphanumeric.matcher(strLower);
 String result=matcher.replaceAll('');
 Integer len=result.length();
 
