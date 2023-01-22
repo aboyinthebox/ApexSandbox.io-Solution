@@ -13,7 +13,7 @@ public List<String> commonChars(List<String> strs){
         }
     }
     
-    Integer minCount = Integer.MAX_VALUE;
+    Integer minCount = 2147483646;
     for (String key : charCount.keySet()) {
         if (charCount.get(key) < minCount) {
             minCount = charCount.get(key);
