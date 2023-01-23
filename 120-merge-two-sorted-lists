@@ -18,6 +18,15 @@ public static List<Integer> mergeLists(List<Integer> list1, List<Integer> list2)
             right++;
         }
     }
+    while(left<leftLength){
+			result.add(list1[left]);
+            left++;
+        }
+        
+    while(right<rightLength){
+            result.add(list2[right]);
+            right++;
+        }
    
 
     return result;
