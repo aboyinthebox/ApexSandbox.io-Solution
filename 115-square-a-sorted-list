@@ -1,0 +1,12 @@
+public static List<Integer> squareList(List<Integer> nums){
+    //solution here
+    
+    List<Integer> result=new List<Integer>();
+
+    for(Integer n:nums){
+        result.add(n*n);
+    }
+
+     
+    return result;
+}
