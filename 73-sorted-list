@@ -8,10 +8,10 @@ public boolean isSorted(List<Integer> numbers) {
         if(numbers[i]<numbers[i+1]){
             isSortedList=true;
         }
-        else if(numbers[i]>numbers[i+1]){
+         if(numbers[i]>numbers[i+1]){
                     isSortedList=true;
                 }
-                else
+        if(!isSortedList)
         {
             isSortedList=false;
             break;
