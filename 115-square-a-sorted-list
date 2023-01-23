@@ -2,7 +2,7 @@ public static List<Integer> squareList(List<Integer> nums){
        //We have to account for negative numbers
     Integer left = 0;
     Integer right = nums.size();
-    Integer highestIndex = nums.size() -1;
+    Integer highestIndex = nums.size();
     List<Integer> solution = new List<Integer>(nums.size());
     //basic two pointer
     while(left < right ){
