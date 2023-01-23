@@ -1,7 +1,7 @@
 public static List<Integer> squareList(List<Integer> nums){
     Integer left=0,right=nums.size();
         List<Integer> result=new List<Integer>();
-        Integer lastIndex=nums.size();
+        Integer lastIndex=nums.size()-1;
 
         while(left<=right){
             Integer leftSquare=nums[left];
