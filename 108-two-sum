@@ -1,0 +1,20 @@
+public static List<Integer> twoSum(List<Integer> nums, Integer target) {
+     //code here
+
+     Map<Integer,Integer> mapToCheck =new Map<Integer,Integer>();
+
+     for(Integer i=0;i<nums.size();i++){
+
+
+         if(mapToCheck.containsKey(nums[i])){
+             return new List<Integer> { mapToCheck.get(nums[i]),i };
+         }
+         else{
+             Integer diff=target-nums[i];
+             mapToCheck.put(diff,i);
+         }
+
+         return null;
+
+     }
+}
