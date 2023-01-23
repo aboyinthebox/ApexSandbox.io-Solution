@@ -1,6 +1,41 @@
 public Boolean isValid(String s){
     //code here 
-    List<Integer> chars=s.getChars();
-
-return false;
+  //code here 
+        List<String> chars=s.split('');
+        Set<Integer> charstoRemove=new Set<Integer> ();
+        List<String> stack=new List<String>();
+        
+        for(Integer i=0;i<chars.size();i++){
+            
+            if(chars[i]=='('||chars[i]=='['||chars[i]=='{'){
+                stack.add(chars[i]);
+            }
+            else if(chars[i]==')'||chars[i]==']'||chars[i]=='}'){
+                
+                if(stack.isEmpty()){
+                    charstoRemove.add(i);
+                    System.debug('charstoremove'+charstoRemove);
+                }
+                else if(chars[i]==')'){
+                    stack.remove(stack.indexOf('(')); 
+                }
+                else if(chars[i]==']'){
+                    stack.remove(stack.indexOf('[')); 
+                }
+                else if(chars[i]=='}'){
+                    stack.remove(stack.indexOf('{')); 
+                }
+            }
+             System.debug('Stack:'+stack);
+        }
+        
+        if(!charstoRemove.isEmpty()){
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+        
+        
 }
