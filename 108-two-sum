@@ -14,7 +14,8 @@ public static List<Integer> twoSum(List<Integer> nums, Integer target) {
              mapToCheck.put(diff,i);
          }
 
-         return null;
+   
 
      }
+           return null;
 }
