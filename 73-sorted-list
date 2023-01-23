@@ -1,23 +1,24 @@
 public boolean isSorted(List<Integer> numbers) {
     //code here
-    Boolean isSortedList;
+    Boolean isSortedAsc=true,isSortedDsc=true;
     if(numbers.size()<=1){return true;}
     
     for(Integer i=0;i<numbers.size()-1;i++){
-        if(numbers[i]==numbers[i+1]){isSortedList=true;continue;}
+        if(numbers[i]==numbers[i+1]){
+            continue;
+        }
         if(numbers[i]<numbers[i+1]){
-            isSortedList=true;
+            isSortedDsc=false;
         }
          if(numbers[i]>numbers[i+1]){
-                    isSortedList=true;
-                }
-        if(!isSortedList)
+                    isSortedAsc=false;
+        }
+        if(!isSortedAsc && !isSortedDsc)
         {
-            isSortedList=false;
             break;
         }
     }
     
    
-    return isSortedList;
+    return (isSortedDsc || isSortedAsc);
 }
