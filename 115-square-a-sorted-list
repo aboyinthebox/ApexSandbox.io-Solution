@@ -5,7 +5,7 @@ public static List<Integer> squareList(List<Integer> nums){
     Integer highestIndex = nums.size() -1;
     List<Integer> solution = new List<Integer>(nums.size());
     //basic two pointer
-    while(left <= right ){
+    while(left < right ){
         Integer leftSquare = nums[left] * nums[left];
         Integer rightSquare = nums[right] * nums[right];
        if(leftSquare > rightSquare){ 
