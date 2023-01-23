@@ -17,13 +17,13 @@ public Boolean isValid(String s){
                     System.debug('charstoremove'+charstoRemove);
                 }
                 else if(chars[i]==')'){
-                    stack.remove(stack.indexOf('(')); 
+                    if(stack.indexOf('(')!=-1) stack.remove(stack.indexOf('(')); 
                 }
                 else if(chars[i]==']'){
-                    stack.remove(stack.indexOf('[')); 
+                    if(stack.indexOf('[')!=-1) stack.remove(stack.indexOf('[')); 
                 }
                 else if(chars[i]=='}'){
-                    stack.remove(stack.indexOf('{')); 
+                    if(stack.indexOf('{')!=-1)  stack.remove(stack.indexOf('{')); 
                 }
             }
              System.debug('Stack:'+stack);
