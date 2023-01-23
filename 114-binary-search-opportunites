@@ -9,7 +9,7 @@ public static Integer search(List<Opportunity> opportunities, Integer target){
        if(opportunities.get(middle).amount==target){
            return middle;
        }
-       else if(target<opportunities..get(middle).amount){
+       else if(target< opportunities.get(middle).amount){
             right=middle-1;
        }
        else{
