@@ -1,12 +1,21 @@
 public static List<Integer> squareList(List<Integer> nums){
-    //solution here
-    
-    List<Integer> result=new List<Integer>();
+    Integer left=0,right=nums.size();
+        List<Integer> result=new List<Integer>();
+        Integer lastIndex=nums.size();
 
-    for(Integer n:nums){
-        result.add(n*n);
-    }
-
-    result.sort();
+        while(left<=right){
+            Integer leftSquare=nums[left];
+            Integer rightSquare=nums[right];
+            
+            if(leftSquare>rightSquare){
+                result[lastIndex--]=leftSquare;
+                left++;
+            } else{
+                result[lastIndex--]=rightSquare;
+                right--;
+            }
+            
+            
+        }     
     return result;
 }
