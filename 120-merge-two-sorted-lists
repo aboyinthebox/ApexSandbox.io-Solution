@@ -2,20 +2,22 @@ public static List<Integer> mergeLists(List<Integer> list1, List<Integer> list2)
     // solution 
 
 
- Integer left=0,right=0;
-    Integer maxLength= (list1.size()>list2.size())? list1.size():list2.size();
-    System.debug('max length:'+maxLength);
+    Integer left=0,right=0;
+    Integer leftLength= list1.size();
+    Integer rightLength=list2.size();
+ 
     List<Integer> result=new List<Integer>();
 
-     if(list1[list1.size()-1] < list2[0]){
-            result.addall(list1);
-            result.addall(list2);
-            return result;
+    while(left<leftLength && right<rightLength)
+    {
+        if(list1[left]<list2[right]){
+            result.add(list1[left]);
+            left++;
         } else{
-            result.addall(list2);
-            result.addall(list1);
-            return result;
+            result.add(list2[right]);
+            right++;
         }
+    }
    
 
     return result;
