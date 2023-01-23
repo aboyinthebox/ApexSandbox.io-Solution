@@ -13,7 +13,7 @@ public static List<Integer> mergeLists(List<Integer> list1, List<Integer> list2)
             }
             else{
                  result.add(list2[left]);
-                 result.add(list2[left]);
+                 result.add(list1[left]);
             }
         }
         else if(list1[left]==null){
