@@ -1,0 +1,19 @@
+public List<Integer> twoSum(List<Integer> nums, Integer target){
+    //code here
+    Integer left=0,right=nums.size()-1;
+
+    while(left<=right){
+        Integer diff=target-nums[left];
+
+        if(diff<nums[right]){
+            right--;
+        } else if(diff=nums[right]){
+            return new List<Integer> {left,right};
+        }
+        else{
+            left++;
+        }
+
+    }
+    return null;
+}
