@@ -20,7 +20,7 @@ public Boolean isValid(String s){
                     stack.remove(stack.indexOf('(')); 
                 }
                 else if(chars[i]==']'){
-                    stack.remove(stack.indexOf('[')); 
+                    if(stack.indexOf('[')!=-1) stack.remove(stack.indexOf('[')); 
                 }
                 else if(chars[i]=='}'){
                     stack.remove(stack.indexOf('{')); 
