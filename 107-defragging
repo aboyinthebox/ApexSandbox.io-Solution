@@ -2,7 +2,7 @@ public void defragging(Integer[] memory)
 {
     // code here
 
- Integer i = 0;
+    Integer i = 0;
     Integer j = 0;
     Integer n = memory.size();
     while (j < n) {
