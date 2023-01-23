@@ -1,6 +1,6 @@
 public static Integer search(List<Opportunity> opportunities, Integer target){
     // solution here
-    Integer middle=opportunities.size()/2;
+    
     Integer left=0;right=opportunities.size();
    
    while(left<right){
