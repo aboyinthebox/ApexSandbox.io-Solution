@@ -6,23 +6,6 @@ public static Integer search(List<Opportunity> opportunities, Integer target){
     Integer r = opportunities.size() - 1;
     //perform binary search on the list opportunities
     // time complexity of binary search is log(n)
-    while(l <= r){
-        // find middle index.
-        // middleIndex = startIndex + (endIndex - startIndex)/2 this is better approach to find middle index
-        Integer m = l + (r - l)/2;
-        //if middleIndex amount == target return middleIndex
-        // else if middleIndex amount > target than our target lies left element of middleIndex because array is sorted
-        // assign endIndex = middleIndex - 1;
-        // else our target lies in right side of middleIndex
-        // assign startIndex = middleIndex + 1
-        // if target doesn't exist return -1
-        if(opportunities.get(m).amount == target){
-            return m;
-        }else if(opportunities.get(m).amount > target){
-            r = m - 1;
-        }else{
-            l = m + 1;
-        }
-    }
+ 
     return -1;
 }
