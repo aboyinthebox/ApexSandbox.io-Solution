@@ -1,0 +1,6 @@
+public Boolean isValid(String s){
+    //code here 
+    List<Integer> chars=s.getChars();
+
+return false;
+}
