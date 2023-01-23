@@ -3,9 +3,9 @@ public static List<Integer> mergeLists(List<Integer> list1, List<Integer> list2)
 
 
     Integer left=0;
-    Integer maxLength= (list1.size()>list2.size())? list1.size():list1.size();
+    Integer maxLength= (list1.size()>list2.size())? list1.size()-1:list1.size()-1;
     List<Integer> result=new List<Integer>();
-    while (left<=maxLength){
+    while (left<maxLength){
         if(list1[left]!=null && list2[left]!=null ){
             if(list1[left]<=list2[left]){
                 result.add(list1[left]);
