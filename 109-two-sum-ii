@@ -7,7 +7,7 @@ public List<Integer> twoSum(List<Integer> nums, Integer target){
 
         if(diff<nums[right]){
             right--;
-        } else if(diff=nums[right]){
+        } else if(diff==nums[right]){
             return new List<Integer> {left,right};
         }
         else{
