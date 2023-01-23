@@ -1,0 +1,20 @@
+public static Integer search(List<Opportunity> opportunities, Integer target){
+    // solution here
+    Integer middle=opportunities.size()/2;
+    Integer left=0;right=opportunities.size();
+   
+   while(left<right){
+       Integer middle=(left+right)/2;
+
+       if(opportunities[middle]==target){
+           return middle;
+       }
+       else if(target<opportunities[middle]){
+            right=middle-1;
+       }
+       else{
+           left=middle+1;
+       }
+   }
+   return -1;
+}
