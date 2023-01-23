@@ -6,10 +6,10 @@ public static Integer search(List<Opportunity> opportunities, Integer target){
    while(left<right){
        Integer middle=(left+right)/2;
 
-       if(opportunities.get(middle).Amount==target){
+       if(opportunities[middle].Amount==target){
            return middle;
        }
-       else if(target < opportunities.get(middle).Amount){
+       else if(target < opportunities[middle].Amount){
             right=middle-1;
        }
        else{
