@@ -1,12 +1,32 @@
 public static Integer findLast(List<Integer> nums, Integer target) {
    // code here
-   if(!nums.contains(target))
-   {return -1;}
-Integer index=0;
-   for(Integer num:nums){
-       if(num==target && index!=0){
-            index = nums.indexOf(target);
-       }
-   }
-   return index;
+public static Integer findLast(List<Integer> nums, Integer target) {
+
+    Integer index;
+
+    if(!nums.contains(target))
+
+    {
+
+        return -1;
+
+    }
+
+    for(Integer i = nums.size()-1; i >= 0; i--)
+
+    {
+
+        if(nums[i] == target)
+
+        {
+
+            index = i;
+
+            break;
+
+        }
+
+    }
+
+    return index;
 }
