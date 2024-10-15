@@ -1,15 +1,18 @@
 public string countAndSay(integer N) {
 
-   String currentSequence = '1';
+   String currentSequence = '';
         for (Integer i = 1; i < N; i++) {
             currentSequence = countAndSayHelper(currentSequence);
         }
-        return currentSequence;
+   return currentSequence;
 
 }
 public string countAndSayHelper(String currentSequence){
  
- String newSequence = '';
+ if(String.isEmpty(currentSequence)){
+     return '1';
+ }
+        String newSequence = '';
         Integer count = 1;
         Integer currentChar = currentSequence.charAt(0);
         
