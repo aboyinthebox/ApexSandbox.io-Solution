@@ -2,7 +2,7 @@ public List<String> commonChars(List<String> strs){
 
     //solution here
 
-    List<Integer> listCount = new Integer[26];
+    List<Integer> listCount = new List<Integer>[26];
 
     for (Integer i = 0; i < 26; i++)
 
