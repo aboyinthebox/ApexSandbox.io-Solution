@@ -1,7 +1,7 @@
 public Id classFromCourse(String courseName) {
     // code here
-    apxio__Class__c className= [ SELECT id FROM apxio__Class__c WHERE apxio__Course__c =:courseName ];
-    if(className != null){
+    apxio__Course__c course = [ SELECT id FROM apxio__Course__c WHERE apxio__Course__c =:courseName ];
+    if(course!= null){
         apxio__Class__c newClass=new apxio__Class__c(apxio__Course__c=courseName);
         insert newClass;
         return newClass.Id;
