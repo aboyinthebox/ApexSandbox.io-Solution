@@ -1,6 +1,6 @@
 public static Integer findLast(List<Integer> nums, Integer target) {
    // code here
-public static Integer findLast(List<Integer> nums, Integer target) {
+
 
     Integer index;
 
