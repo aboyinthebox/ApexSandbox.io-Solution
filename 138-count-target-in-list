@@ -1,0 +1,4 @@
+public Integer findTargetCount(List<Integer> nums, Integer target) {
+    // code here
+    if(!nums.contains(target)) return 0;
+}
