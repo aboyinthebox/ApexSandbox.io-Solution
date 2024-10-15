@@ -2,4 +2,11 @@ public static Integer findLast(List<Integer> nums, Integer target) {
    // code here
    if(!nums.contains(target))
    {return -1;}
+Integer index;
+   for(Integer num:nums){
+       if(num==target){
+            index = nums.get(num);
+       }
+   }
+   return index;
 }
