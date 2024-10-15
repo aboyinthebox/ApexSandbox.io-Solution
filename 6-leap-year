@@ -15,5 +15,6 @@ public Boolean isLeapYear(Integer year) {
        
 
     }
-    else{return false;}
+    else
+    {return false;}
 }
