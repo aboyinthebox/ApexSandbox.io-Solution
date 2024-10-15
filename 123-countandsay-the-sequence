@@ -1,29 +1,40 @@
 public string countAndSay(integer N) {
 
-   String currentSequence = '';
-        for (Integer i = 1; i < N; i++) {
-            currentSequence = countAndSayHelper(currentSequence);
-        }
-   return currentSequence;
+    // code here
+
+     String res = '';
+
+    for (Integer i = 0; i < N; i++){
+
+        res = process(res);
+
+    }
+
+    return res;
 
 }
-public string countAndSayHelper(String res){
- 
-    if(String.isEmpty(res)){
-         return '1';
-     }
-        String newSequence = '';
-        Integer count = 1;
-        Integer res = res.length();
-        List<String> sp = res.split('');
-        
-          while (i < n){
+
+public String process(String s){
+
+    if (String.isEmpty(s))
+
+        return '1';
+
+    String res = '';
+
+    Integer i = 0;
+
+    Integer n = s.length();
+
+    List<String> sp = s.split('');
+
+    while (i < n){
 
         Integer j = i + 1;
 
         Integer count = 1;
 
-        // COUNT DUPLICATE
+// COUNT DUPLICATE
 
         while (j < n && sp.get(j - 1) == sp.get(j)){
 
@@ -35,7 +46,7 @@ public string countAndSayHelper(String res){
 
         if (i < n){
 
-            newSequence += count + '' + sp.get(i);
+            res += count + '' + sp.get(i);
 
         }
 
@@ -43,6 +54,6 @@ public string countAndSayHelper(String res){
 
     }
 
-    return newSequence;
+    return res;
 
 }
