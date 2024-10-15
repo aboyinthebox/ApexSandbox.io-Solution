@@ -2,9 +2,9 @@ public static Integer findLast(List<Integer> nums, Integer target) {
    // code here
    if(!nums.contains(target))
    {return -1;}
-Integer index;
+Integer index=0;
    for(Integer num:nums){
-       if(num==target){
+       if(num==target && index!=0){
             index = nums.indexOf(target);
        }
    }
