@@ -1,4 +1,12 @@
 public Integer findTargetCount(List<Integer> nums, Integer target) {
     // code here
     if(!nums.contains(target)) return 0;
+
+    Integer count=0;
+    for(Integer num:nums){
+        if (num.contains(target)){
+            count++;
+        }
+    }
+    return count++;
 }
