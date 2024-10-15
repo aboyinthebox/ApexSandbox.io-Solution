@@ -10,7 +10,7 @@ public List<String> commonChars(List<String> strs){
 
     for (String s : strs){
 
-        Integer[] wordCount = new Integer[26];
+          List<Integer> wordCount = new List<Integer>(26);
 
         for (Integer i = 0; i < 26; i++)
 
