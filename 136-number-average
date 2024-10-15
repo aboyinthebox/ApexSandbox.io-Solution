@@ -1,0 +1,8 @@
+public Decimal average(List<Decimal> numbers){
+    // your code here
+    Decimal total=0;
+    for(Decimal num:numbers){
+        total+=num;
+    }
+    return total/numbers.size();
+}
