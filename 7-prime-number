@@ -2,7 +2,7 @@ public Boolean isPrime(Integer num) {
     //code here
 Boolean isDivisible=false;
     if(num>1){
-        for(Integer i=2 ; i<num;i++){
+        for(Integer i=2 ; i<num-1;i++){
             Integer result=Math.mod(num,i);
             if(result==0){ 
                 isDivisible=true;
