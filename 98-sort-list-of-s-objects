@@ -1,18 +1,18 @@
 public List<Account> getAccounts(List<Account> accounts) {
     // code here
 if(accounts == null) return null;
-AccountWrapper[] accList=new List<AccountWrapper>();
+ List<AcctWrapper> accList=new List<AccountWrapper>();
 
 for(Account a:accounts){
     accList.add(new AccountWrapper(a));
 }
 accList.sort();
 
-
+  List<Account> accountsList = new List<Account>();
 for(AccountWrapper a:accList){
-   accounts.add(a.account);
+   accountsList.add(a.account);
 }
-return accList;
+return accountsList;
 }
 
 // write extra class here 
@@ -26,6 +26,8 @@ public class AccountWrapper implements Comparable{
     		throw ex;
         }
        account=acc;
+
+       
     }
 
     public Integer compareTo(Object compareTo){
