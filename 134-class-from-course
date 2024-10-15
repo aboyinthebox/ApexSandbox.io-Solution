@@ -4,6 +4,10 @@ public Id classFromCourse(String courseName) {
     if(className != null){
         apxio__Class__c newClass=new apxio__Class__c(apxio__Course__c=courseName);
         insert newClass;
+        return newClass.Id;
     }
-    return newClass.Id;
+    else{
+        return null;
+    }
+    
 }
