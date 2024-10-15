@@ -3,8 +3,8 @@ public Integer findTargetCount(List<Integer> nums, Integer target) {
     if(!nums.contains(target)) return 0;
 
     Integer count=0;
-    for(Integer num:nums){
-        if (num.contains(target)){
+   for(Integer i=0;i<nums.size();i++){
+        if (nums[i]==target){
             count++;
         }
     }
