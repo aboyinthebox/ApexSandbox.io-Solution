@@ -5,7 +5,7 @@ public static Integer findLast(List<Integer> nums, Integer target) {
 Integer index;
    for(Integer num:nums){
        if(num==target){
-            index = nums.get(num);
+            index = nums.get(target);
        }
    }
    return index;
