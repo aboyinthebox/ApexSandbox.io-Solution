@@ -7,29 +7,42 @@ public string countAndSay(integer N) {
    return currentSequence;
 
 }
-public string countAndSayHelper(String currentSequence){
+public string countAndSayHelper(String res){
  
- if(String.isEmpty(currentSequence)){
-     return '1';
- }
+    if(String.isEmpty(res)){
+         return '1';
+     }
         String newSequence = '';
         Integer count = 1;
-        Integer currentChar = currentSequence.charAt(0);
+        Integer res = res.length();
+        List<String> sp = res.split('');
         
-        for (Integer i = 1; i < currentSequence.length(); i++) {
-            if (currentSequence.charAt(i) == currentChar) {
-                count++;
-            } else {
-                newSequence+=count;
-                List<Integer> mychar=new List<Integer>();
-                mychar.add(currentChar);
-                newSequence+=String.fromCharArray(mychar);
-                currentChar = currentSequence.charAt(i);
-                count = 1;
-            }
+          while (i < n){
+
+        Integer j = i + 1;
+
+        Integer count = 1;
+
+        // COUNT DUPLICATE
+
+        while (j < n && sp.get(j - 1) == sp.get(j)){
+
+            count++;
+
+            j++;
+
         }
-        newSequence+=count;
-        newSequence+=currentChar;
-        return newSequence;
+
+        if (i < n){
+
+            newSequence += count + '' + sp.get(i);
+
+        }
+
+        i = j;
+
+    }
+
+    return newSequence;
 
 }
